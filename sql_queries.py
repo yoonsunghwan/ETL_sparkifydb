@@ -16,7 +16,11 @@ song_id varchar,
 artist_id varchar,
 session_id int,
 location varchar,
-user_agent varchar
+user_agent varchar,
+FOREIGN KEY (user_id) REFERENCES users (user_id),
+FOREIGN KEY (song_id) REFERENCES songs (songs_id),
+FOREIGN KEY (artist_id) REFERENCES artists (artist_id),
+FOREIGN KEY (start_time) REFERENCES time (start_time)
 )
 """ 
 
