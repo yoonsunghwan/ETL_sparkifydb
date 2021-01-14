@@ -4,7 +4,6 @@ Postgres database with tables designed to optimize queries on song play analysis
 https://labrosa.ee.columbia.edu/millionsong/  
 https://github.com/Interana/eventsim  
 
-## Description  
 Build a Postgres database with a star schema using Python. The ETL pipeline will transfer data from local directories into the Postgres database. The data from the local directories come from the 2 links above.  
 
 ### etl.py 
