@@ -65,11 +65,10 @@ weekday int
 # INSERT RECORDS
 
 songplay_table_insert = ("""
-INSERT INTO songplays (
-songplay_id, start_time, user_id, level,
+INSERT INTO songplays (start_time, user_id, level,
 song_id, artist_id, session_id, location, user_agent
 )
-VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
 ON CONFLICT(songplay_id) DO NOTHING;
 """)
 
